@@ -1,0 +1,250 @@
+body {
+    background-color: rgba(0, 0, 0, 0.750);
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius: 8px;
+    overflow:hidden;
+    width: 100%;
+    margin:0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tableSection{
+  width: 50%;
+  float: left;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+th{
+  font-family:  Arial, Helvetica, sans-serif;
+  background-color: #f01018;
+  padding: 15 25;  
+}
+
+#actorTable{float: left;}
+#movieTable{float: right;}
+
+#actorTable tr:nth-child(2n+3), #movieTable tr:nth-child(2n+3){
+  background-color: #ebebeb;
+}
+
+#actorTable tr:hover, #movieTable tr:hover{
+  cursor:pointer;
+  background-color: #9b9b9b;
+}
+
+tr:hover #actorNameCell, tr:hover #movieTitleCell{
+  color: white;
+}
+
+#actorPicture, #moviePicture{
+  width: 150;
+  height: 200;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#actorTableImageCol, #movieTableImageCol{
+  width: 0;
+}
+
+#actorPictureCell, #moviePictureCell{
+  padding: 5;
+}
+
+
+#actorNameCell, #movieTitleCell{
+  font-family:  Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: left;
+  padding: 0 25;
+  font-size: 25;
+}
+
+
+
+/* Clear floats (clearfix hack) */
+.buttons:after,
+.loggedIn:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.buttons button:hover,
+.loggedIn button:hover {
+    background-color: #bb0a10;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #f01018;
+    height: 50;
+    margin: -75 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    box-shadow: 0px 5px 10px #00000059;
+}
+
+#topNavSearch,
+#topNavLogo {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0 15;
+    text-decoration: none;
+    font-size: 17;
+    margin: 0;
+}
+
+#signUp,
+#logIn,
+#imageButton {
+    cursor: pointer;
+}
+
+#imageButton {
+    border: none;
+    background-color: inherit;
+}
+
+#searchInput {
+    border-radius: 8px;
+    border-width: 0;
+    padding: 5 8;
+}
+
+#searchDiv {
+    display: inline-block;
+    padding: 12 15 0 0;
+}
+
+#signUpButton,
+#logInButton,
+#logOutButton {
+    border: none;
+    background-color: inherit;
+    padding: 17px 0;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+#searchButton {
+    background-color: #bb0a10;
+    border: 1px solid #bb0a10;
+    color: white;
+    padding: 5px 24px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 10;
+}
+
+#logIn,
+#signUp,
+#logOut {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 5em;
+}
+
+#welcomeBack {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 2px 1em;
+}
+
+#logIn:hover,
+#signUp:hover,
+#logOut:hover {
+    background-color: #bb0a10;
+}
+
+.content{
+    margin: 75 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#errorMessage{
+    color: red;
+    font-weight:bold;
+    border-radius: 8px;
+    font-size: 20;}
+
+#logInFormButton, #signUpFormButton {
+  background-color: #f01018; /* Green background */
+  border: 1px solid #bb0a10; /* Green border */
+  color: white; /* White text */
+  padding: 5px 24px; /* Some padding */
+  height: 2em;
+  cursor: pointer; /* Pointer/hand icon */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+#logInFormButton:hover, #signUpFormButton:hover {
+    background-color: #bb0a10;;
+}
+
+footer {
+  display: inline-flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #3b3b3b;
+  color: white;
+  text-align: center;
+  height: 1.5em;
+}
+
+.footerText{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 10;
+  color: #4d4d4d;
+  font-size: 13;
+}
+
